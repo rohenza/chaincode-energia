@@ -57,9 +57,8 @@ cloneSamplesRepo() {
         echo "===> Cloning chaincode-energia repo and checkout v${VERSION}"
         cd fabric-samples && git checkout v${VERSION}
     else
-        echo "===> Cloning chaincode-energia repo and checkout v${VERSION}"
-	git clone -b master https://github.com/rohenza/chaincode-energia.git && cd chaincode-energia
-
+        echo "===> Cloning chaincode-energia repo and checkout"
+	git clone -b master https://github.com/rohenza/chaincode-energia.git && cd chaincode-energia && git checkout
     fi
 }
 
