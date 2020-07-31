@@ -16,9 +16,6 @@ export PATH=${PWD}/../bin:$PATH
 export FABRIC_CFG_PATH=${PWD}/configtx
 export VERBOSE=false
 
-chmod +x scripts/createChannel.sh
-chmod +x scripts/deployCC.sh
-
 # Print the usage message
 function printHelp() {
   echo "Usage: "
